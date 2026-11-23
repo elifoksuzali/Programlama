@@ -1,0 +1,20 @@
+# Java derleme çıktıları
+*.class
+/build/
+/out/
+/bin/
+
+# IDE
+/.idea/
+*.iml
+/.vscode/
+/nbproject/private/
+
+# İşletim sistemi
+Thumbs.db
+.DS_Store
+
+# API anahtarı / sır İÇEREN dosyalar repoya ASLA eklenmemeli
+.env
+*.key
+secrets.*
