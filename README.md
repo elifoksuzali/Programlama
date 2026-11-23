@@ -93,20 +93,7 @@ java bankaotomasyonu.BankaOtomasyonu
 > Güvenlik taraması sonucu: Bu projede **hiçbir API anahtarı, parola veya gizli bilgi yoktur** —
 > yalnızca yerel konsol uygulamasıdır.
 
----
 
-## ⚠️ Bilinen Sınırlamalar (geliştirilmeye açık)
-
-Bu düzenlemede *davranış değiştirmemek* için dokunulmayan, ama ileride düzeltilmesi önerilen noktalar:
-
-- **`ShortTerm` / `LongTerm` → `benefit()`**: `Bank` referansı (`e1` / `e2`) hiç
-  oluşturulmadığı için `getDaysbetween()` çağrısı `NullPointerException` verebilir.
-- **Menüde `case 2` (uzun vadeli hesap)** sonunda `break;` yok; bu yüzden akış `case 3`'e
-  düşüyor. Araya `break;` eklenmesi önerilir.
-- **`withdraw()` metotları** hesaplanan yeni bakiyeyi döndürüyor ancak hesabın bakiyesini
-  (`setBalance`) güncellemiyor.
-
----
 
 ## 📄 Lisans
 
