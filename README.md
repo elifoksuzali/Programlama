@@ -80,21 +80,6 @@ java bankaotomasyonu.BankaOtomasyonu
 
 ---
 
-## 🔧 Bu Sürümde Yapılan Düzenlemeler
-
-- **Derleme hatası düzeltildi:** `Current.java` → `deposit()` metodunda `return getBalance;`
-  (metot parantezsiz yazılmış, derlenmiyordu) → `return balance;` olarak düzeltildi.
-- **Çıkış hatası düzeltildi:** `BankaOtomasyonu` ana döngüsü, `0` girildiğinde hiç sonlanmıyordu
-  (kullanılmayan `condition1` değişkeni set ediliyordu). Artık doğru değişken (`condition`)
-  güncellenerek döngü düzgün sonlanıyor.
-- **Ölü kod temizlendi:** Kullanılmayan `int count;` değişkeni ve boş `case 7` bloğu kaldırıldı.
-- **`.gitignore` eklendi** (`.class`, `/build/`, IDE dosyaları, `.env` vb.).
-
-> Güvenlik taraması sonucu: Bu projede **hiçbir API anahtarı, parola veya gizli bilgi yoktur** —
-> yalnızca yerel konsol uygulamasıdır.
-
-
-
 ## 📄 Lisans
 
 Eğitim amaçlı bir projedir; serbestçe incelenip geliştirilebilir.
